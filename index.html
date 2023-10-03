@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>RACE REGISTRATION FORM</h1>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age" min="1" max="70" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Title</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Mr.</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Ms.</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Mrs.</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="fax">Fax</label>
+          <input type="text" id="fax" placeholder="Enter fax number" pattern="\d{10}\(\d{3}\)" title="Please enter a valid fax number with 10 digits followed by 3 digits in parentheses" required />
+        </div>
+
+        <div class="input-box">
+          <label for="tShirtSize">T-shirt Size </label>
+          <input type="text" id="tShirtSize" placeholder="Enter your T-shirt size">
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
